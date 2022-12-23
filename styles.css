@@ -185,3 +185,25 @@
 .reversed {
   flex-direction: row-reverse;
 }
+
+/*CHAQUETAS Y BERMUDAS*/
+
+.contenedor-chaq-berm{
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.chaq-ber-img{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+.chaq-ber-img img{
+    width: 80%;
+}
