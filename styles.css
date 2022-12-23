@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.vacaciones-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.vacas-banner{
+    width: 100%;
+}
+.vacas-banner img{
+    width: 100%;
+    object-fit: contain;
+}
