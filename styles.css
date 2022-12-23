@@ -1,96 +1,151 @@
-*{
-    margin: 0;
-    padding: 0;
+* {
+  margin: 0;
+  padding: 0;
 }
 
 /*Banner*/
-.vacaciones-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+.vacaciones-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
-.vacas-banner{
-    width: 100%;
+.vacas-banner {
+  width: 100%;
 }
-.vacas-banner img{
-    width: 100%;
-    object-fit: contain;
+.vacas-banner img {
+  width: 100%;
+  object-fit: contain;
 }
-
 
 /*Titulo principal*/
-.contenedor-titulo-principal{
-    display: flex;
-    width: 75%;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-    margin: 4rem 0;
+.contenedor-titulo-principal {
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+  margin: 4rem 0;
 }
-.contenedor-titulo-principal p{
-    text-align: center;
+.contenedor-titulo-principal p {
+  text-align: center;
 }
-.imagen-titulo{
-    width: 75%;
-
+.imagen-titulo {
+  width: 75%;
 }
-.imagen-titulo img{
-    width: 100%;
-    object-fit: contain;
+.imagen-titulo img {
+  width: 100%;
+  object-fit: contain;
 }
 
 /*Categorías hovereables*/
 
-.categorias-cuadros-container{
-display: flex;
-align-items: center;
-justify-content: center;
-flex-wrap: wrap;
-width: 100%;
+.categorias-cuadros-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 0.5em;
+  margin: 0 0 2rem 0;
 }
-.cuadro-categoria{
-    width: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    
+.cuadro-categoria {
+  width: 49.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
 }
-.cuadro-categoria p{
-position: absolute;
-color: white;
-font-size: 28px;
-opacity: 0;
-transition: all 0.3s ease-in-out;
+.cuadro-categoria p {
+  position: absolute;
+  color: white;
+  font-size: 28px;
+  opacity: 0;
+  transition: all 0.3s ease-in-out;
 }
-.cuadro-categoria:hover p{
-    opacity: 1;
+.cuadro-categoria:hover p {
+  opacity: 1;
 }
-.cuadro-categoria:hover .cuadro-overlay{
-    background-color: rgba(0, 0, 0, 0.562);
+.cuadro-categoria:hover .cuadro-overlay {
+  background-color: rgba(0, 0, 0, 0.562);
 }
-.cuadro-categoria:hover .cuadro-overlay img{
-    opacity: 0.7;
-    
+.cuadro-categoria:hover .cuadro-overlay img {
+  opacity: 0.7;
 }
-.cuadro-overlay{
-width: 100%;
+.cuadro-overlay {
+  width: 100%;
 }
-.cuadro-overlay img{
-    display: block;
-    width: 100%;
-    object-fit: contain;
-    transition: all 0.3s ease-in-out;
+.cuadro-overlay img {
+  display: block;
+  width: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease-in-out;
 }
 
-.frio{
-    background: hsl(214, 100%, 57%);
+.frio {
+  background: hsl(214, 100%, 57%);
 }
-.calido{
-background: hsl(0, 100%, 45%);
+.calido {
+  background: hsl(0, 100%, 45%);
 }
-.clima-normal{
-    background: hsl(0, 0%, 0%);
+.clima-normal {
+  background: hsl(0, 0%, 0%);
+}
+
+/*Estilos de seccion media*/
+.container-cuerpo-carousel {
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #e8eff5;
+  padding: 4rem 0;
+}
+.contenedor-jeans {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.contenedor-imagen-texto {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+.imagen-contenedor {
+  width: 45%;
+ 
+}
+.imagen-contenedor img {
+  width: 100%;
+
+}
+
+.texto-contenedor{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.texto-contenedor img{
+    width: 100%;
+    max-width: 500px;
+    object-fit: contain;
+}
+.texto-contenedor p{
+    width: 65%;
+    text-align: center;
+}
+
+.vacaciones-btn{
+    color: white;
+    background:#4f7381;
+    padding: 8px 16px;
+    border: none;
+    outline: none;
 }
