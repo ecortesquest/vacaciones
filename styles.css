@@ -30,6 +30,7 @@
 }
 .contenedor-titulo-principal p {
   text-align: center;
+  font-size: 24px;
 }
 .imagen-titulo {
   width: 75%;
@@ -85,31 +86,29 @@
   transition: all 0.3s ease-in-out;
 }
 .cuadro-overlay img:nth-child(1) {
-    opacity: 1;
-    transition: all 0.3s ease-in-out;
+  opacity: 1;
+  transition: all 0.3s ease-in-out;
 }
 .cuadro-overlay img:nth-child(2) {
-    opacity: 0;
- 
+  opacity: 0;
 }
-.cuadro-categoria:hover .cuadro-overlay img:nth-child(1){
-    opacity: 0;
+.cuadro-categoria:hover .cuadro-overlay img:nth-child(1) {
+  opacity: 0;
 }
-.cuadro-categoria:hover .cuadro-overlay img:nth-child(2){
-    opacity: 1;
+.cuadro-categoria:hover .cuadro-overlay img:nth-child(2) {
+  opacity: 1;
 }
-.cuadro-categoria:hover .override-opacity img:nth-child(1){
-    opacity: 0.7 !important;
+.cuadro-categoria:hover .override-opacity img:nth-child(1) {
+  opacity: 0.7 !important;
 }
-.relative{
-    position: relative;
+.relative {
+  position: relative;
 }
-.absolute{
-    position: absolute;
-    top: 0;
-    left: 0;
+.absolute {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-
 
 .clima-normal {
   background: hsl(0, 0%, 0%);
@@ -139,35 +138,50 @@
 }
 .imagen-contenedor {
   width: 45%;
- 
 }
 .imagen-contenedor img {
   width: 100%;
-
 }
 
-.texto-contenedor{
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    gap: 3rem;
+.texto-contenedor {
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
 }
-.texto-contenedor img{
-    width: 100%;
-    max-width: 500px;
-    object-fit: contain;
+.texto-contenedor img {
+  width: 100%;
+  max-width: 450px;
+  object-fit: contain;
 }
-.texto-contenedor p{
-    width: 65%;
-    text-align: center;
+.texto-contenedor p {
+  width: 65%;
+  text-align: center;
+  font-size: 24px;
 }
 
-.vacaciones-btn{
-    color: white;
-    background:#4f7381;
-    padding: 8px 16px;
-    border: none;
-    outline: none;
+.vacaciones-btn {
+  color: white;
+  background: #4f7381;
+  padding: 16px 32px;
+  border: none;
+  outline: none;
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+}
+.vacaciones-btn:hover {
+  background: #004561;
+}
+
+/*slick carousel*/
+
+.o-carousel {
+  width: 100%;
+}
+
+/*POLOS*/
+.reversed {
+  flex-direction: row-reverse;
 }
