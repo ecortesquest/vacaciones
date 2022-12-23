@@ -65,16 +65,7 @@
   opacity: 0;
   transition: all 0.3s ease-in-out;
 }
-.cuadro-categoria:hover p {
-  opacity: 1;
-}
 
-.cuadro-categoria:hover .cuadro-overlay {
-  background-color: rgba(0, 0, 0, 0.562);
-}
-.cuadro-categoria:hover .cuadro-overlay img {
-  opacity: 0.7;
-}
 
 .cuadro-overlay {
   width: 100%;
@@ -92,15 +83,7 @@
 .cuadro-overlay img:nth-child(2) {
   opacity: 0;
 }
-.cuadro-categoria:hover .cuadro-overlay img:nth-child(1) {
-  opacity: 0;
-}
-.cuadro-categoria:hover .cuadro-overlay img:nth-child(2) {
-  opacity: 1;
-}
-.cuadro-categoria:hover .override-opacity img:nth-child(1) {
-  opacity: 0.7 !important;
-}
+
 .relative {
   position: relative;
 }
@@ -171,9 +154,7 @@
   transition: 0.3s ease-in-out;
   cursor: pointer;
 }
-.vacaciones-btn:hover {
-  background: #004561;
-}
+
 
 /*slick carousel*/
 
@@ -206,4 +187,30 @@
 
 .chaq-ber-img img{
     width: 80%;
+}
+
+@media(hover:hover){
+
+    .vacaciones-btn:hover {
+        background: #004561;
+      }
+      .cuadro-categoria:hover .cuadro-overlay img:nth-child(1) {
+        opacity: 0;
+      }
+      .cuadro-categoria:hover .cuadro-overlay img:nth-child(2) {
+        opacity: 1;
+      }
+      .cuadro-categoria:hover .override-opacity img:nth-child(1) {
+        opacity: 0.7 !important;
+      }
+      .cuadro-categoria:hover p {
+        opacity: 1;
+      }
+      
+      .cuadro-categoria:hover .cuadro-overlay {
+        background-color: rgba(0, 0, 0, 0.562);
+      }
+      .cuadro-categoria:hover .cuadro-overlay img {
+        opacity: 0.7;
+      }
 }
