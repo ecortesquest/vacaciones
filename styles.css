@@ -153,6 +153,7 @@
   outline: none;
   transition: 0.3s ease-in-out;
   cursor: pointer;
+  text-decoration: none;
 }
 
 
@@ -170,14 +171,16 @@
 /*CHAQUETAS Y BERMUDAS*/
 
 .contenedor-chaq-berm{
-    width: 80%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    margin: 4em 0;
+    padding: 2em 0 4em 0;
 }
 .chaq-ber-img{
-    width: 100%;
+    width: 80%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -186,7 +189,43 @@
 }
 
 .chaq-ber-img img{
-    width: 80%;
+    width: 95%;
+}
+.text-img{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2em 0;
+}
+.text-img p{
+  width: 40%;
+  padding-right: 3em;
+  font-size: 24px;
+}
+.text-img img{
+  width: 40%;
+  border-left: 2px solid red;
+  padding-left: 3em;
+}
+.repad p{
+ 
+  padding-left: 3em;
+  padding-right: 0;
+
+}
+.bged{
+  background-image: url(/arquivos/Qst-bermudas-bg.png);
+  background-position: bottom;
+    background-size: cover;
+}
+
+.repad img{
+
+  border-left:none;
+  border-right: 2px solid red;
+  padding-left: 0;
+  padding-right: 3em;
 }
 
 @media(hover:hover){
